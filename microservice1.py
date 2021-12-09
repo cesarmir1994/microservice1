@@ -162,7 +162,7 @@ for x in lstPermissions:
 #    print(i)
 version = aapt_versionName(path)
 #print(version)
-lstCheck = load_lstPermission('lstPermissionsDangeous.json')
+lstCheck = load_lstPermission('lstDangerous.json')
 
 flag = comparationLst(lstPermissions, lstCheck)
 print("El resultado de la bandera es : ",flag)
