@@ -251,8 +251,10 @@ def writeJson(lstResult, lstDangerous):
                 'name': lstDangerous[j],
                 'description': 'Dangerous'
             })
-        #assert os.path.isfile(path), '%s is not a valid path of json file' % path
-        with open('result/permisos'+str(datetime.utcnow())+'.json', 'w') as fp:
+            utc_time = datetime.utcnow()
+            utc_str = utc_time.strftime('%Y-%m-%d-%H:%M:%S')
+
+        with open('result/permisos'+utc_str+'.json', 'w') as fp:
             fp.write(
                 ',\n'.join(json.dumps(i) for i in lstWrite) +
                 '\n')
