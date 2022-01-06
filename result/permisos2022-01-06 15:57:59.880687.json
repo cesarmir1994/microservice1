@@ -1,0 +1,5 @@
+{"id": 0, "name": "BILLING", "description": "NA"},
+{"id": 1, "name": "ACCESS_COARSE_LOCATION", "description": "NA"},
+{"id": 2, "name": "ACCESS_FINE_LOCATION", "description": "NA"},
+{"id": 0, "name": "ACCESS_COARSE_LOCATION", "description": "Dangerous"},
+{"id": 1, "name": "ACCESS_FINE_LOCATION", "description": "Dangerous"}
