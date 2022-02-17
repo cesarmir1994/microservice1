@@ -302,6 +302,8 @@ def Service1():
             dir_PermissionsDangerous = 'lstPermissionsDangerous.json'
             lstCheck = load_lstPermission(dir_PermissionsDangerous)
             [flag, lstDangerous] = comparationLst(lstResult, lstCheck)
+            if flag == True:
+                print('This app need a privacy policy')
             writeJson(lstResult, lstDangerous)
             logger.info("The microservice was sucessfull")
 
