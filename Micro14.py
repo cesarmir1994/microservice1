@@ -36,7 +36,7 @@ def init_logger(file):
     handler.setFormatter(formatter)
     logger = log.getLogger(__name__)
     logger.addHandler(handler)
-    logger.setLevel(log.DEBUG)
+    logger.setLevel(log.INFO)
     return logger
 
 
