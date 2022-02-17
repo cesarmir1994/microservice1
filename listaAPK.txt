@@ -1,2 +1,4 @@
 store/damas.apk
 store/asamblea.apk
+store/calculadora.apk
+store/brujula.apk
