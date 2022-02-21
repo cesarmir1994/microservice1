@@ -226,7 +226,7 @@ def writeJson(lstResult, lstDangerous, version, name, flag):
         lstApp.append({
             'name': name,
             'version': version,
-            'flag': flag
+            'privacyPolicy': flag
         })
         for i in range(0, len(lstResult), 1):
             lstWrite.append({
@@ -251,17 +251,6 @@ def writeJson(lstResult, lstDangerous, version, name, flag):
     except Exception as e:
         logger.error(e)
 
-#This function comprobate the input arguments
-# def InputArgs():
-#     logger.debug("Comprobate the input arguments")
-#     try:
-#         assert len(sys.argv) == 2, 'ERROR: You do not ingress 1 arguments'
-#     except Exception as error:
-#         logger.error(error)
-#         log('InputArgs', error)
-#         return False
-#     else:
-#         True
 def apk_list(path):
     try:
         datos = []
@@ -277,22 +266,6 @@ def apk_list(path):
 # #----------------------------------------------------------------
 #                       MAIN CODE
 #----------------------------------------------------------------
-#Comprobation of input arguments for the execute
-
-# logger.info("The Script was initiate")
-# parse_config("config_file")
-# path = input('')
-# parse_config("config_file")
-# lstPermissions = aapt_permissions(path)
-# lstResult = depurePermissions(lstPermissions)
-# dir_PermissionsDangerous = 'lstPermissionsDangerous.json'
-# lstCheck = load_lstPermission(dir_PermissionsDangerous)
-# [flag, lstDangerous] = comparationLst(lstResult, lstCheck)
-# version = aapt_version_code(path)
-# name = aapt_Name(path)
-# writeJson(lstResult, lstDangerous, version, name, flag)
-# logger.info("The microservice was sucessfull")
-
 
 def Service1():
     print('Enter to the Microserice 1')
