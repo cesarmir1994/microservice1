@@ -127,7 +127,8 @@ def aapt_permissions(apk_file):
         permissions = []
         if output is not None:
             lines = output.split('\n')
-            permissions = [x.split('name=')[1].strip("'") for x in lines if x.startswith('uses-permission:')]
+            permissions = [x.split('name=')[1].strip("'") for x in lines 
+                           if x.startswith('uses-permission:')]
     except Exception as e:
         reason = 'aapt_permissions unavailable'
         logger.error('aapt_permissions failed',
