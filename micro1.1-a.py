@@ -305,7 +305,7 @@ def Service1():
             else:
                 logger.info('The app does not need a privacy policy')
             logger.info("The microservice was sucessfull")
-            os.system("cat result/results.json")
+            
             #command = "cat result/results.json"
             #process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=None, shell=True)
 
@@ -313,6 +313,7 @@ def Service1():
             logger.error(e)
 
     logger.info('Exit to the microservice')
+    os.system("cat result/results.json")
 ###
 #Excute
 ##
