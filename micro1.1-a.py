@@ -299,6 +299,7 @@ def Service1():
                 logger.info('The app does not need a privacy policy')
 
             logger.info("The microservice was sucessfull")
+            print()
             
         except Exception as error:
             logger.error(e)
