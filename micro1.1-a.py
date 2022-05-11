@@ -13,19 +13,13 @@ import json
 import logging
 from pythonjsonlogger import jsonlogger
 import fnmatch
-handler = None
-logger = None
 
 aapt = None
-global flag
 #------------------------------------------------------------------
-#                     LOG CONFIGURATION
+#                     LOG CONFIGURATION				  #
 #------------------------------------------------------------------
 import logging as log
 from pythonjsonlogger import jsonlogger
-
-handler = None
-logger = None
 
 def init_logger(file):
     global handler, logger
@@ -35,7 +29,7 @@ def init_logger(file):
     handler.setFormatter(formatter)
     logger = log.getLogger(__name__)
     logger.addHandler(handler)
-    logger.setLevel(log.INFO)
+    logger.setLevel(log.DEBUG)
     return logger
 
 def stop_logger():
@@ -90,7 +84,7 @@ def aapt_call(command, args):
         assert aapt is not None, 'SDK configuration not yet initialized, need to init() first'
         aapt_cmd = [aapt, command]
         aapt_cmd.extend(args)
-        log('AAPT', aapt_cmd)
+#        log('AAPT', aapt_cmd)
         result = None
         result =  subprocess.check_output(aapt_cmd, stderr=subprocess.STDOUT).decode('UTF-8', 'backslashreplace')
     except Exception as e:
@@ -140,7 +134,7 @@ def aapt_permissions(apk_file):
 def aapt_Name(apk_file):
     try:
         assert os.path.isfile(apk_file), '%s is not a valid APK path' % apk_file
-        logger.debug('This function was initiate')
+        logger.debug('This function aapt_Name was initiate')
         output = aapt_badging(apk_file)
         package = None
         if output is not None:
@@ -183,7 +177,7 @@ def aapt_version_code(apk_file):
 def load_lstPermission(path_json):
     try:
         assert os.path.isfile(path_json), '%s is not a valid path of json file' % path_json
-        logger.debug('This function was initiate')
+        logger.debug('This function loadPErmission was initiate')
         lstCheck = []
         opc = 'r'
         with open(path_json, opc) as lstOutput:
@@ -199,7 +193,6 @@ def comparationLst(Permissions, Check):
     try:
         assert Permissions is not None, 'We need initiate a Permissions list'
         assert Check is not None, 'We need initiate a Checking list'
-        logger.debug('This function was initiate')
         flag = False
         dangerous = []
         logger.debug('The function comparationLst was initiate')
@@ -218,7 +211,7 @@ def comparationLst(Permissions, Check):
 def depurePermissions(Permissions):
     try:
         assert Permissions is not None, 'We need initiatea Permissions list'
-        logger.debug('The function was initiate')
+        logger.debug('The function depurePermissions was initiate')
         result = []
         for x in Permissions:
             z = x.split('.')[x.count('.')].split(" ")[0].split("'")[0]
@@ -234,7 +227,7 @@ def writeJson(lstResult, lstDangerous, version, name, flag):
     lstWrite = []
     lstApp = []
     try:
-        logger.debug('The function was initiate')
+        logger.debug('The function writeJson was initiate')
         lstApp.append({
             'name': name,
             'version': version,
@@ -304,24 +297,19 @@ def Service1():
                 logger.info('The app needs a privacy policy')
             else:
                 logger.info('The app does not need a privacy policy')
+
             logger.info("The microservice was sucessfull")
             
-
         except Exception as error:
             logger.error(e)
 
     logger.info('Exit to the microservice')
+    print()
     os.system("cat result/results.json")
+    print()
 ###
 #Excute
 ##
-
 Service1()
    
 logger = stop_logger()
-
-
-
-
-
-
