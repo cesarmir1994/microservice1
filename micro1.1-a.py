@@ -229,7 +229,7 @@ def writeJson(lstResult, lstDangerous, version, name, flag):
     try:
         logger.debug('The function writeJson was initiate')
         lstApp.append({
-            'name': name,
+            'packagename': name,
             'version': version,
             'privacyPolicy': flag
         })
