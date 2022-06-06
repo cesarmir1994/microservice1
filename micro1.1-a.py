@@ -245,7 +245,6 @@ def writeJson(lstResult, lstDangerous, version, name, flag):
                 'name': lstDangerous[j],
                 'description': 'Dangerous'
             })
-        #assert os.path.isfile(path), '%s is not a valid path of json file' % path
         with open('result/results.json', '+a') as fp:
             fp.write(
             ',\n'.join(json.dumps(j) for j in lstApp) +
