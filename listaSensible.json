@@ -1,0 +1,202 @@
+[
+  {
+    "idPermission": 1,
+    "idGroup": 1,
+    "description": "RECEIVE_SMS"
+  },
+   {
+    "idPermission": 2,
+    "idGroup": 1,
+    "description": "READ_SMS"
+  },
+    {
+    "idPermission": 3,
+    "idGroup": 1,
+    "description": "RECEIVE_MMS"
+  },
+    {
+    "idPermission": 4,
+    "idGroup": 1,
+    "description": "PROCESS_OUTGOING_CALLS"
+  },
+    {
+    "idPermission": 5,
+    "idGroup": 1,
+    "description": "RECEIVE_WAP_PUSH"
+  },
+    {
+    "idPermission": 6,
+    "idGroup": 1,
+    "description": "USE_SIP"
+  },
+    {
+    "idPermission": 7,
+    "idGroup": 1,
+    "description": "CALL_PHONE"
+  },
+    {
+    "idPermission": 8,
+    "idGroup": 1,
+    "description": "ANSWER_PHONE_CALLS"
+  },
+    {
+    "idPermission": 9,
+    "idGroup": 1,
+    "description": "ACCEPT_HANDOVER"
+  },
+    {
+    "idPermission": 10,
+    "idGroup": 2,
+    "description": "CAMERA"
+  },
+    {
+    "idPermission": 11,
+    "idGroup": 2,
+    "description": "RECORD_AUDIO"
+  },
+    {
+    "idPermission": 12,
+    "idGroup": 2,
+    "description": "ADD_VOICEMAIL"
+  },
+    {
+    "idPermission": 13,
+    "idGroup": 3,
+    "description": "ACTIVITY_RECOGNITION"
+  },
+    {
+    "idPermission": 14,
+    "idGroup": 3,
+    "description": "BLUETOOTH_ADVERTISE"
+  },
+    {
+    "idPermission": 15,
+    "idGroup": 3,
+    "description": "BODY_SENSORS"
+  },
+    {
+    "idPermission": 16,
+    "idGroup": 3,
+    "description": "BODY_SENSORS_BACKGROUND"
+  },
+    {
+    "idPermission": 17,
+    "idGroup": 3,
+    "description": "BLUETOOTH_CONNECT"
+  },
+    {
+    "idPermission": 18,
+    "idGroup": 4,
+    "description": "ACCESS_COARSE_LOCATION"
+  },
+    {
+    "idPermission": 19,
+    "idGroup": 4,
+    "description": "ACCESS_FINE_LOCATION"
+  },
+    {
+    "idPermission": 20,
+    "idGroup": 4,
+    "description": "ACCESS_BACKGROUND_LOCATION"
+  },
+    {
+    "idPermission": 21,
+    "idGroup": 4,
+    "description": "ACCESS_WIFI_STATE"
+  },
+    {
+    "idPermission": 22,
+    "idGroup": 4,
+    "description": "ACCEES_NETWORK_STATE"
+  },
+    {
+    "idPermission": 23,
+    "idGroup": 4,
+    "description": "ACCESS_LOCATION_EXTRA_COMMANDS"
+  },
+    {
+    "idPermission": 24,
+    "idGroup": 4,
+    "description": "ACCESS_MEDIA_LOCATION"
+  },
+    {
+    "idPermission": 25,
+    "idGroup": 5,
+    "description": "WRITE_EXTERNAL_STORAGE"
+  },
+    {
+    "idPermission": 26,
+    "idGroup": 5,
+    "description": "READ_EXTERNAL_STORAGE"
+  },
+    {
+    "idPermission": 27,
+    "idGroup": 6,
+    "description": "READ_CONTACTS"
+  },
+    {
+    "idPermission": 28,
+    "idGroup": 6,
+    "description": "WRITE_CONTACTS"
+  },
+    {
+    "idPermission": 29,
+    "idGroup": 7,
+    "description": "READ_CALL_LOG"
+  },
+    {
+    "idPermission": 30,
+    "idGroup": 7,
+    "description": "WRITE_CALL_LOG"
+  },
+    {
+    "idPermission": 31,
+    "idGroup": 8,
+    "description": "READ_CALENDAR"
+  },
+    {
+    "idPermission": 32,
+    "idGroup": 8,
+    "description": "WRITE_CALENDAR"
+  },
+    {
+    "idPermission": 33,
+    "idGroup": 9,
+    "description": "READ_PHONE_STATE"
+  },
+    {
+    "idPermission": 34,
+    "idGroup": 9,
+    "description": "READ_PRECISE_PHONE_STATE"
+  },
+    {
+    "idPermission": 35,
+    "idGroup": 9,
+    "description": "READ_BASIC_PHONE_STATE"
+  },
+    {
+    "idPermission": 36,
+    "idGroup": 9,
+    "description": "READ_PHONE_NUMBER"
+  },
+    {
+    "idPermission": 37,
+    "idGroup": 9,
+    "description": "GET_ACCOUNTS"
+  },
+    {
+    "idPermission": 38,
+    "idGroup": 10,
+    "description": "USE_BIOMETRIC"
+  },
+    {
+    "idPermission": 39,
+    "idGroup": 10,
+    "description": "USE_FINGERPRINT"
+  },
+    {
+    "idPermission": 40,
+    "idGroup": 11,
+    "description": "INTERNET"
+  }
+]
