@@ -107,7 +107,7 @@
     {
     "idPermission": 22,
     "idGroup": 4,
-    "description": "ACCEES_NETWORK_STATE"
+    "description": "ACCESS_NETWORK_STATE"
   },
     {
     "idPermission": 23,
